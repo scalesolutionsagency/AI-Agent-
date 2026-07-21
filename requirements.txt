@@ -1,0 +1,43 @@
+# Lead Scraper Agent Dependencies
+
+# Core
+python-dotenv==1.0.0
+PyYAML==6.0
+
+# Web Scraping & APIs
+requests==2.31.0
+aiohttp==3.9.0
+apify-client==1.4.2
+
+# Data Processing
+pandas==2.1.3
+numpy==1.26.2
+
+# Database & Storage
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.2.0
+google-api-python-client==2.101.0
+notion-client==2.2.1
+
+# Scheduling
+APScheduler==3.10.4
+pytz==2023.3
+
+# Data Validation
+email-validator==2.1.0
+phonenumbers==8.13.0
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+
+# Utilities
+click==8.1.7
+pydantic==2.5.0
+tenacity==8.2.3
+
+# Development (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
