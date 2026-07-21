@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  digital-clock:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_APP=web.py
+      - FLASK_ENV=production
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    networks:
+      - clock-network
+
+networks:
+  clock-network:
+    driver: bridge

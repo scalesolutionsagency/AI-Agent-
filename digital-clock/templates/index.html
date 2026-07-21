@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multi-Timezone</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🕐 Digital Clock</h1>
+            <p>Current time across multiple time zones</p>
+        </header>
+        
+        <div class="controls">
+            <button id="themeToggle" class="btn btn-secondary">🌙 Dark Mode</button>
+            <button id="formatToggle" class="btn btn-secondary">12/24 Hour</button>
+            <button id="refreshBtn" class="btn btn-primary">🔄 Refresh</button>
+        </div>
+        
+        <div class="clocks-grid" id="clocksGrid">
+            <div class="loading">
+                <p>Loading clocks...</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Last updated: <span id="lastUpdate">-</span></p>
+            <p>Auto-refreshing every second</p>
+        </footer>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/clock.js') }}"></script>
+</body>
+</html>
