@@ -1,0 +1,14 @@
+{
+  "buildCommand": "pip install -r requirements.txt",
+  "outputDirectory": ".",
+  "functions": {
+    "api/index.py": {
+      "runtime": "python3.11"
+    }
+  },
+  "env": {
+    "GOOGLE_PLACES_API_KEY": "AIzaSyAjH-2U6p6LumY-mqzrvuTsD91iz7OA0yQ",
+    "LEAD_SOURCE": "google_places",
+    "PYTHONUNBUFFERED": "1"
+  }
+}
