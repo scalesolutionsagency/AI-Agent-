@@ -2,10 +2,16 @@
   "buildCommand": "pip install -r requirements.txt",
   "outputDirectory": ".",
   "functions": {
-    "api/index.py": {
+    "vercel_app.py": {
       "runtime": "python3.11"
     }
   },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/vercel_app.py"
+    }
+  ],
   "env": {
     "GOOGLE_PLACES_API_KEY": "AIzaSyAjH-2U6p6LumY-mqzrvuTsD91iz7OA0yQ",
     "LEAD_SOURCE": "google_places",
